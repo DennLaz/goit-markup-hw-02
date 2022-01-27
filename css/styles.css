@@ -12,7 +12,7 @@
 /* Вторичный цвет фона #F5F4FA  */
 body {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .list {
@@ -24,27 +24,27 @@ body {
   color: #000000;
 }
 span {
-  color: #2196f3;
+  color: var(--special-text-color);
 }
 
 /* навигация */
 .nav-link {
-  color: #212121;
+  color: var(--title-text-color);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--special-text-color);
 }
 
 /* Контакты */
 .contacts-list {
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .contacts-list:focus,
 .contacts-list:hover {
-  color: #2196f3;
+  color: var(--special-text-color);
 }
 
 /* hero */
@@ -55,5 +55,5 @@ span {
 /* section */
 .section-title,
 .section-name {
-  color: #212121;
+  color: var(--title-text-color);
 }
