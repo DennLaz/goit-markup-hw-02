@@ -1,4 +1,59 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --special-text-color: #2196f3;
+}
+
+/* основной цвет заглавного текста текста #212121 */
+/* основной текст #757575*/
+/* Цвет лого, кнопки, ссылки #2196F3 */
+/* Белый цвет #FFFFFF */
+/*Белый цвет 60% прозрачноснти rgba(255, 255, 255, 0.6) */
+/* Вторичный цвет фона #F5F4FA  */
 body {
-  background-color: rgb(3, 245, 56);
-  color: rgb(243, 9, 9);
+  background-color: #ffffff;
+  color: #757575;
+}
+
+.list {
+  list-style: none;
+}
+
+/* Логотип */
+.logo {
+  color: #000000;
+}
+span {
+  color: #2196f3;
+}
+
+/* навигация */
+.nav-link {
+  color: #212121;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #2196f3;
+}
+
+/* Контакты */
+.contacts-list {
+  color: #757575;
+}
+
+.contacts-list:focus,
+.contacts-list:hover {
+  color: #2196f3;
+}
+
+/* hero */
+.hero {
+  color: #ffffff;
+}
+
+/* section */
+.section-title,
+.section-name {
+  color: #212121;
 }
