@@ -2,6 +2,9 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --special-text-color: #2196f3;
+  --bg-color: #ffffff;
+  --grey-color: #f5f4fa;
+  --footer-color: rgba(255, 255, 255, 0.6);
 }
 
 /* основной цвет заглавного текста текста #212121 */
@@ -11,7 +14,7 @@
 /*Белый цвет 60% прозрачноснти rgba(255, 255, 255, 0.6) */
 /* Вторичный цвет фона #F5F4FA  */
 body {
-  background-color: #ffffff;
+  background-color: var(--bg-color);
   color: var(--primary-text-color);
 }
 
@@ -27,6 +30,8 @@ span {
   color: var(--special-text-color);
 }
 
+/* cтили для index.html */
+
 /* навигация */
 .nav-link {
   color: var(--title-text-color);
@@ -34,6 +39,10 @@ span {
 
 .nav-link:hover,
 .nav-link:focus {
+  color: var(--special-text-color);
+}
+
+.nav-link.current {
   color: var(--special-text-color);
 }
 
@@ -49,11 +58,49 @@ span {
 
 /* hero */
 .hero {
-  color: #ffffff;
+  color: var(--bg-color);
+}
+
+/* button hero*/
+.hero-button {
+  background-color: var(--special-text-color);
+  color: var(--bg-color);
 }
 
 /* section */
 .section-title,
 .section-name {
   color: var(--title-text-color);
+}
+
+/* fotter */
+.address-link {
+  color: var(--bg-color);
+}
+
+.address-contact {
+  color: var(--footer-color);
+}
+
+/* Стили для portfolio.html */
+
+/* portfolio text pages */
+.items-text {
+  color: var(--primary-text-color);
+}
+
+.items-title {
+  color: var(--title-text-color);
+}
+
+/* portfolio button  */
+.work-button {
+  background-color: var(--grey-color);
+  color: var(--title-text-color);
+}
+
+.work-button:focus,
+.work-button:hover {
+  background-color: var(--special-text-color);
+  color: var(--bg-color);
 }
