@@ -6,6 +6,7 @@
   --grey-color: #f5f4fa;
   --footer-color: rgba(255, 255, 255, 0.6);
   --logo-color: #000000;
+  --bg-footer-color: #2f303a;
 }
 
 /* основной цвет заглавного текста текста #212121 */
@@ -29,9 +30,10 @@ body {
 .logo {
   color: var(--logo-color);
   font-family: Raleway, sans-serif;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
+  text-decoration: none;
 }
 
 span {
@@ -47,6 +49,7 @@ span {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -65,6 +68,7 @@ span {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 
 .contacts-list:focus,
@@ -89,27 +93,71 @@ span {
   background-color: var(--special-text-color);
   color: var(--bg-color);
   font-family: inherit;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
 
   align-items: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /* section */
-.section-title,
-.section-name {
+.section-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-/* fotter */
+.section-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.section-subtitle {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-text {
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.section-position {
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+/* fotter and our team*/
+.bg-color {
+  background-color: var(--bg-footer-color);
+}
+.bg-team {
+  background-color: var(--grey-color);
+}
+
 .address-link {
   color: var(--bg-color);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
 }
 
 .address-contact {
   color: var(--footer-color);
+  font-size: 14px;
+  line-height: 1.7;
+  text-decoration: none;
 }
 
 .address-link:hover,
@@ -125,18 +173,35 @@ span {
 /* Стили для portfolio.html */
 
 /* portfolio text pages */
+
+.items-links {
+  text-decoration: none;
+}
+
 .items-text {
   color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
 }
 
 .items-title {
   color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 /* portfolio button  */
 .work-button {
   background-color: var(--grey-color);
   color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .work-button:focus,
